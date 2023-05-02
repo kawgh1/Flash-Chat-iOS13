@@ -14,7 +14,7 @@ Flash Chat is an internet based messaging app similar to WhatsApp, the popular m
 - Firebase -- https://firebase.google.com
 - CLTypingLabel -- https://cocoapods.org/pods/CLTypingLabel
 
-
+### Topics Learned
 
 * How to integrate third party libraries in your app using Cocoapods and Swift Package Manager.
 * How to store data in the cloud using Firebase Firestore.
@@ -29,7 +29,7 @@ Flash Chat is an internet based messaging app similar to WhatsApp, the popular m
 * How to create direct Segues for navigation.
 
 
-# Constants
+#### Constants
 ```
 struct K {
     static let cellIdentifier = "ReusableCell"
