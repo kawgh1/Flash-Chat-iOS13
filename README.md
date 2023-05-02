@@ -10,9 +10,9 @@ Flash Chat is an internet based messaging app similar to WhatsApp, the popular m
 
 ### Libraries Used
 
-- IQ Keyboard Manager -- https://github.com/hackiftekhar/IQKeyboardManager
-- Firebase -- https://firebase.google.com
-- CLTypingLabel -- https://cocoapods.org/pods/CLTypingLabel
+- `IQ Keyboard Manager` -- https://github.com/hackiftekhar/IQKeyboardManager
+- `Firebase Firestore` -- https://firebase.google.com
+- `CLTypingLabel` -- https://cocoapods.org/pods/CLTypingLabel
 
 ### Topics Learned
 
