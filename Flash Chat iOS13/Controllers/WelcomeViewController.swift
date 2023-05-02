@@ -17,7 +17,7 @@ class WelcomeViewController: UIViewController {
         super.viewDidLoad()
         
         // uses CLTypingLabel cocoapod
-        titleLabel.text = "⚡️FlashChat"
+        titleLabel.text = K.appName
         }
        
     }

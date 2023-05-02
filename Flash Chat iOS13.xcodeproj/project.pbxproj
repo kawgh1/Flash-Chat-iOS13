@@ -10,6 +10,10 @@
 		09972DF529FE282A003A0AF8 /* update pod version.png in Resources */ = {isa = PBXBuildFile; fileRef = 09972DF429FE282A003A0AF8 /* update pod version.png */; };
 		09972DF729FE2CF0003A0AF8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 09972DF629FE2CF0003A0AF8 /* GoogleService-Info.plist */; };
 		09972DF929FE35AC003A0AF8 /* Firebase Authentication.png in Resources */ = {isa = PBXBuildFile; fileRef = 09972DF829FE35AC003A0AF8 /* Firebase Authentication.png */; };
+		09972DFB2A00B619003A0AF8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09972DFA2A00B619003A0AF8 /* Constants.swift */; };
+		09972DFD2A00B970003A0AF8 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09972DFC2A00B970003A0AF8 /* Message.swift */; };
+		09972E002A00BDC8003A0AF8 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09972DFE2A00BDC8003A0AF8 /* MessageCell.swift */; };
+		09972E012A00BDC8003A0AF8 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09972DFF2A00BDC8003A0AF8 /* MessageCell.xib */; };
 		0B628177235DEE8100E35CAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B628176235DEE8100E35CAF /* AppDelegate.swift */; };
 		0B628179235DEE8100E35CAF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B628178235DEE8100E35CAF /* SceneDelegate.swift */; };
 		0B62817E235DEE8100E35CAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B62817C235DEE8100E35CAF /* Main.storyboard */; };
@@ -27,6 +31,10 @@
 		09972DF429FE282A003A0AF8 /* update pod version.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "update pod version.png"; path = "../../update pod version.png"; sourceTree = "<group>"; };
 		09972DF629FE2CF0003A0AF8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		09972DF829FE35AC003A0AF8 /* Firebase Authentication.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Firebase Authentication.png"; sourceTree = "<group>"; };
+		09972DFA2A00B619003A0AF8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		09972DFC2A00B970003A0AF8 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Message.swift; path = "Flash Chat iOS13/Message.swift"; sourceTree = SOURCE_ROOT; };
+		09972DFE2A00BDC8003A0AF8 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		09972DFF2A00BDC8003A0AF8 /* MessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
 		0B628173235DEE8100E35CAF /* Flash Chat iOS13.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Flash Chat iOS13.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B628176235DEE8100E35CAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0B628178235DEE8100E35CAF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -98,6 +106,7 @@
 				0B628181235DEE8400E35CAF /* LaunchScreen.storyboard */,
 				0B628184235DEE8400E35CAF /* Info.plist */,
 				09972DF629FE2CF0003A0AF8 /* GoogleService-Info.plist */,
+				09972DFA2A00B619003A0AF8 /* Constants.swift */,
 			);
 			path = "Flash Chat iOS13";
 			sourceTree = "<group>";
@@ -117,6 +126,8 @@
 			isa = PBXGroup;
 			children = (
 				0B62817C235DEE8100E35CAF /* Main.storyboard */,
+				09972DFE2A00BDC8003A0AF8 /* MessageCell.swift */,
+				09972DFF2A00BDC8003A0AF8 /* MessageCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -124,6 +135,7 @@
 		0B628194235DF03A00E35CAF /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				09972DFC2A00B970003A0AF8 /* Message.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -202,6 +214,7 @@
 				09972DF929FE35AC003A0AF8 /* Firebase Authentication.png in Resources */,
 				0B62819E235F0F4D00E35CAF /* README.md in Resources */,
 				09972DF529FE282A003A0AF8 /* update pod version.png in Resources */,
+				09972E012A00BDC8003A0AF8 /* MessageCell.xib in Resources */,
 				0B62817E235DEE8100E35CAF /* Main.storyboard in Resources */,
 				09972DF729FE2CF0003A0AF8 /* GoogleService-Info.plist in Resources */,
 			);
@@ -260,6 +273,9 @@
 				0B628177235DEE8100E35CAF /* AppDelegate.swift in Sources */,
 				0B628179235DEE8100E35CAF /* SceneDelegate.swift in Sources */,
 				0B62818F235DF01000E35CAF /* LoginViewController.swift in Sources */,
+				09972E002A00BDC8003A0AF8 /* MessageCell.swift in Sources */,
+				09972DFB2A00B619003A0AF8 /* Constants.swift in Sources */,
+				09972DFD2A00B970003A0AF8 /* Message.swift in Sources */,
 				0B628191235DF01B00E35CAF /* ChatViewController.swift in Sources */,
 				0B62818D235DF00B00E35CAF /* RegisterViewController.swift in Sources */,
 			);
