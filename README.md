@@ -2,6 +2,8 @@
 
 # Flash-Chat
 
+![gif]()
+
 ## Our Goal
 
 
@@ -13,6 +15,10 @@ Flash Chat is an internet based messaging app similar to WhatsApp, the popular m
 - `IQ Keyboard Manager` -- https://github.com/hackiftekhar/IQKeyboardManager
 - `Firebase Firestore` -- https://firebase.google.com
 - `CLTypingLabel` -- https://cocoapods.org/pods/CLTypingLabel
+
+### Firebase Flow
+
+![firebase]()
 
 ### Topics Learned
 
