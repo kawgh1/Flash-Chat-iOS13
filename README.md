@@ -2,12 +2,16 @@
 
 # Flash-Chat
 
-![gif]()
+![gif](https://github.com/kawgh1/Flash-Chat-iOS13/blob/master/chatapp.gif?raw=true)
 
 ## Our Goal
 
 
 Flash Chat is an internet based messaging app similar to WhatsApp, the popular messaging app that was bought by Facebook for $22 billion. We will use  Firebase Firestore as a backend database to store and retrieve our messages from the cloud. 
+
+### Showing and Hiding the Navigation Bar in a View Controller
+
+![hideshow](https://raw.githubusercontent.com/kawgh1/Flash-Chat-iOS13/master/hideShowNavBar.png)
 
 
 ### Libraries Used
@@ -18,7 +22,7 @@ Flash Chat is an internet based messaging app similar to WhatsApp, the popular m
 
 ### Firebase Flow
 
-![firebase]()
+![firebase](https://raw.githubusercontent.com/kawgh1/Flash-Chat-iOS13/master/Firebase%20Authentication1.png)
 
 ### Topics Learned
 
