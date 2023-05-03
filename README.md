@@ -11,7 +11,7 @@ Flash Chat is an internet based messaging app similar to WhatsApp, the popular m
 
 ### Showing and Hiding the Navigation Bar in a View Controller
 
-![hideshow](https://raw.githubusercontent.com/kawgh1/Flash-Chat-iOS13/master/hideShowNavBar.png)
+![hideshow](https://raw.githubusercontent.com/kawgh1/Flash-Chat-iOS13/master/hideShowNavBar1.png)
 
 
 ### Libraries Used
