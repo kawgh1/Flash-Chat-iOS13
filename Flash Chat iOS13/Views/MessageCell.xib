@@ -11,34 +11,49 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="74" id="KGk-i7-Jjw" customClass="MessageCell" customModule="Flash_Chat_iOS13" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="337" height="74"/>
+        <tableViewCell userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReusableCell" rowHeight="251" id="KGk-i7-Jjw" customClass="MessageCell" customModule="Flash_Chat_iOS13" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="608" height="251"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="337" height="74"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="608" height="251"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="RQ8-oM-SWX">
-                        <rect key="frame" x="10" y="10" width="317" height="50"/>
+                    <stackView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="RQ8-oM-SWX">
+                        <rect key="frame" x="10" y="10" width="409" height="231"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u9J-en-9IA" userLabel="Message Bubble">
-                                <rect key="frame" x="0.0" y="0.0" width="257" height="50"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="YouAvatar" translatesAutoresizingMaskIntoConstraints="NO" id="GLc-Jb-3sg">
+                                <rect key="frame" x="0.0" y="90.666666666666671" width="50" height="50.000000000000014"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="9tq-GY-QoX"/>
+                                    <constraint firstAttribute="height" constant="50" id="ZxD-w6-fLX"/>
+                                </constraints>
+                            </imageView>
+                            <view alpha="0.94999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u9J-en-9IA" userLabel="Message Bubble">
+                                <rect key="frame" x="70" y="-96.333333333333329" width="259" height="237"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="65b-Pz-en5">
-                                        <rect key="frame" x="10" y="14.999999999999998" width="41.333333333333336" height="20.333333333333329"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="65b-Pz-en5">
+                                        <rect key="frame" x="15" y="10" width="229" height="217"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="229" id="eeO-EQ-kPF"/>
+                                        </constraints>
+                                        <string key="text">Label asdf asdf asdf asdf as fas dfs df saf asdfasdfdsa fsadf sadf sa fsa df safd sa fsa fd sadf as fdas f sadf as df asfd asdfasdf asdf asfsafdasdf</string>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
                                         <color key="textColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" name="BrandLightPurple"/>
                                 <constraints>
-                                    <constraint firstItem="65b-Pz-en5" firstAttribute="centerY" secondItem="u9J-en-9IA" secondAttribute="centerY" id="Ait-gM-nS9"/>
-                                    <constraint firstItem="65b-Pz-en5" firstAttribute="leading" secondItem="u9J-en-9IA" secondAttribute="leading" constant="10" id="KSp-mK-wzY"/>
+                                    <constraint firstItem="65b-Pz-en5" firstAttribute="centerY" secondItem="u9J-en-9IA" secondAttribute="centerY" id="Eor-24-pnF"/>
+                                    <constraint firstItem="65b-Pz-en5" firstAttribute="centerY" secondItem="u9J-en-9IA" secondAttribute="centerY" id="Mmk-Zr-h3R"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="58" id="UhK-yH-q4r"/>
+                                    <constraint firstItem="65b-Pz-en5" firstAttribute="leading" secondItem="u9J-en-9IA" secondAttribute="leading" constant="15" id="av4-PM-sVh"/>
+                                    <constraint firstItem="65b-Pz-en5" firstAttribute="top" secondItem="u9J-en-9IA" secondAttribute="top" constant="10" id="bmC-1v-yyx"/>
+                                    <constraint firstAttribute="trailing" secondItem="65b-Pz-en5" secondAttribute="trailing" constant="15" id="hoT-XU-aBN"/>
                                 </constraints>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MeAvatar" translatesAutoresizingMaskIntoConstraints="NO" id="vcY-9s-Xwn">
-                                <rect key="frame" x="267" y="0.0" width="50" height="50"/>
+                                <rect key="frame" x="349" y="90.666666666666671" width="50" height="50.000000000000014"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="RH2-iX-pcU"/>
                                     <constraint firstAttribute="width" constant="50" id="gf8-Vn-4w2"/>
@@ -46,30 +61,37 @@
                             </imageView>
                         </subviews>
                         <constraints>
-                            <constraint firstAttribute="height" constant="50" id="2Kn-Ur-J1v"/>
-                            <constraint firstItem="vcY-9s-Xwn" firstAttribute="leading" secondItem="u9J-en-9IA" secondAttribute="trailing" constant="10" id="fMC-pj-IlA"/>
+                            <constraint firstItem="vcY-9s-Xwn" firstAttribute="centerY" secondItem="RQ8-oM-SWX" secondAttribute="centerY" id="7TA-wC-7Es"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="66" id="GF7-Jp-jTy"/>
+                            <constraint firstAttribute="trailing" secondItem="vcY-9s-Xwn" secondAttribute="trailing" constant="10" id="RNW-ub-ECg"/>
+                            <constraint firstItem="GLc-Jb-3sg" firstAttribute="centerY" secondItem="RQ8-oM-SWX" secondAttribute="centerY" id="gTC-Ek-GwA"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="407" id="l6I-Xu-SVI"/>
                         </constraints>
                     </stackView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="RQ8-oM-SWX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Hjt-63-ocp"/>
-                    <constraint firstAttribute="trailing" secondItem="RQ8-oM-SWX" secondAttribute="trailing" constant="10" id="Rrc-4H-iHr"/>
-                    <constraint firstItem="RQ8-oM-SWX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="gJk-UP-Cvd"/>
-                    <constraint firstAttribute="bottom" secondItem="RQ8-oM-SWX" secondAttribute="bottom" constant="10" id="lSQ-8k-jvK"/>
+                    <constraint firstAttribute="trailing" secondItem="RQ8-oM-SWX" secondAttribute="trailing" constant="10" id="74b-zP-Je3"/>
+                    <constraint firstItem="RQ8-oM-SWX" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="OgO-Qe-sHx"/>
+                    <constraint firstItem="RQ8-oM-SWX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="UQV-kA-O80"/>
+                    <constraint firstItem="RQ8-oM-SWX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="VL9-6n-380"/>
+                    <constraint firstItem="RQ8-oM-SWX" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="aT7-D9-SHx"/>
+                    <constraint firstAttribute="bottom" secondItem="RQ8-oM-SWX" secondAttribute="bottom" constant="10" id="zcw-ji-4mv"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <accessibility key="accessibilityConfiguration" identifier="ReusableCell"/>
             <connections>
-                <outlet property="messageBubble" destination="u9J-en-9IA" id="c4P-rw-HsH"/>
-                <outlet property="messageLabel" destination="65b-Pz-en5" id="NzR-OE-gtj"/>
-                <outlet property="rightImageView" destination="vcY-9s-Xwn" id="Mxw-Yr-wok"/>
+                <outlet property="leftImageView" destination="GLc-Jb-3sg" id="AK2-kW-i8X"/>
+                <outlet property="messageBubble" destination="u9J-en-9IA" id="Vei-6T-dAh"/>
+                <outlet property="messageLabel" destination="65b-Pz-en5" id="E3a-Xc-KQE"/>
+                <outlet property="rightImageView" destination="vcY-9s-Xwn" id="Nuh-cG-wZM"/>
             </connections>
-            <point key="canvasLocation" x="167.17557251908397" y="12.67605633802817"/>
+            <point key="canvasLocation" x="372.51908396946561" y="21.47887323943662"/>
         </tableViewCell>
     </objects>
     <resources>
         <image name="MeAvatar" width="36" height="36"/>
+        <image name="YouAvatar" width="36" height="36"/>
         <namedColor name="BrandLightPurple">
             <color red="0.98000001907348633" green="0.9649999737739563" blue="0.99599999189376831" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

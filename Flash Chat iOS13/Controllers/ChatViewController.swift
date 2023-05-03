@@ -58,6 +58,8 @@ class ChatViewController: UIViewController {
                             // because the UI loads before the Firestore request is returned, we run async reload Data
                             DispatchQueue.main.async {
                                 self.tableView.reloadData()
+                                let indexPath = IndexPath(row:self.messages.count - 1, section: 0)
+                                self.tableView.scrollToRow(at: indexPath, at: .top, animated: false) // scroll to bottom when new data
                             }
                         }
                     }
@@ -110,9 +112,27 @@ extension ChatViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let message = messages[indexPath.row]
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: K.cellIdentifier, for: indexPath) as! MessageCell
 //        cell.textLabel?.text = "This is a cell"
         cell.messageLabel.text = messages[indexPath.row].body
+        
+        // this is a message from the current user
+        if message.sender == Auth.auth().currentUser?.email {
+            cell.leftImageView.isHidden = true
+            cell.rightImageView.isHidden = false
+            cell.messageBubble.backgroundColor = UIColor(named: K.BrandColors.lightPurple)
+            cell.messageLabel.textColor = UIColor(named: K.BrandColors.purple)
+        }
+        // this is a message from another user
+        else {
+            cell.leftImageView.isHidden = false
+            cell.rightImageView.isHidden = true
+            cell.messageBubble.backgroundColor = UIColor(named: K.BrandColors.lighBlue)
+            cell.messageLabel.textColor = UIColor(named: K.BrandColors.blue)
+        }
+    
         return cell
     }
 }
